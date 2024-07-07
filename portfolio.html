@@ -6,53 +6,67 @@
     <meta name="keywords" content="Ilya, frontend">
     <meta name="description" name="Сайт создан с целью практики полученных навыков">
     <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="n1luha.jpg" alt="тут должно было быть моё фото" width="250">
-    <h1>Nilov Ilya</h1>    
-    <p>Я занимаюсь спортом с 5 лет, учусь в <strong>Политехе</strong> и изучаю <em>программирование</em>.</p>
-    <p>Это мой первый сайт с момента, как я познаю <strong><em>фронтенд</em></strong>.</p>
-    <h3>Мои социальные сети:</h3>
-    <ul>
-        <li><a href="https://vk.com/n1luha">Vkontakte</a></li>
-        <li>Instagram: @n1luha</li>
-        <li>Telegram: @n1luha</li>
-    </ul>
-    <h3>Опыт обучения:</h3>
-    <table width="200" border="1">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>159 школа</td>
-                <td>2012-2023</td>
-            </tr>
-            <tr>
-                <td>Политех</td>
-                <td>2023-..</td>
-            </tr>
-        </tbody>
-    </table>
-    <h3>Связаться со мной:</h3>
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
-    </div>
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="30" rows="5"></textarea>
-    </div>
-    <div>
-        <button type="submit">Отправить форму</button>
+    <div class="body">
+        <div class="container">
+            <img class="img" src="n1luha.jpg" alt="тут должно было быть моё фото" width="250">
+            <div class="box">
+                <h1>Нилов Илья</h1>    
+                <p>Я занимаюсь спортом с 5 лет, учусь в Политехе и изучаю программирование.</p>
+                <h3>Мои социальные сети:</h3>
+                <ul class="hrefs">
+                    <li><a href="#">Vkontakte</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li class="last"><a href="#">Telegram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="list">
+            <h3>Мои хобби</h3>
+            <ol class="hobby">
+                <li>Спорт</li>
+                <li>Музыка</li>
+                <li>Саморазвитие</li>
+            </ol>
+        </div>
+        <div class="table">
+            <h3>Обучение</h3>
+            <table>
+                <tr>
+                    <td>Детский сад 31</td>
+                    <td>2008-2012</td>
+                </tr>
+                <tr>
+                    <td>Гимназия 159</td>
+                    <td>2012-2023</td>
+                </tr>
+                <tr>
+                    <td>Политех</td>
+                    <td>2023-...</td>
+                </tr>
+            </table>
+        </div>
+        <div class="message">
+            <h3>Связаться со мной:</h3>
+            <div class="namemail">
+                <div>
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div>
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+            <div>
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение"></textarea>   
+            <div class="btn">
+                <button type="submit">Отправить форму</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
