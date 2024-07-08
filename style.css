@@ -13,7 +13,8 @@ body {
 .body {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
 }
 
 .container {
@@ -67,10 +68,11 @@ h1 {
 }
 
 .hrefs a:hover {
-    color: black;
+    color: blue;
 }
 
 .hrefs a:active {
+
     color: #45464f;
 }
 
@@ -107,6 +109,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.table table {
+    width: 100%;
+}
+
 .table {
     margin-left: 30px;
     background: #fee0e1;
@@ -123,52 +129,63 @@ h1 {
 .table td {
     text-align: left;
     padding: 10px 20px 10px 20px;
-  }
+}
 
 .table tbody {
     color: #45464f;
 }
 
-.message h3{
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-bottom: 30px;
+.message {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    min-width: 300px;
+    max-width: 600px;
 }
 
-.message label {
+.message h3 {
+    text-align: center;
+    margin: 30px;
+}
+
+.inp label {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 70px;
     color: #45464f;
 }
 
-.message input, .message textarea {
+.inp input,  .inp textarea {
+    width: 100%;
+    box-sizing: border-box;
     border: none;
-    width: 50%;
-    margin-left: 30px;
-    border-radius: 30px;
-    font-size: 16px;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
 }
 
-input, textarea {
-    padding-left: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.namemail {
+    margin-bottom: 10px;
+    display: flex;
+}
 
+.namemail .inp {
+    margin-right: 20px;
+    width: 50%;
 }
 
 button {
-     text-align: center;
-     padding: 30px;
+     padding: 20px;
      border-radius: 30px;
      border: none;
-     margin: 30px;
      color: white;
      background: black;
      font-size: 16px;
-     padding-left: 40px;
-     padding-right: 40px;
+     display: block;
+     margin: 30px auto;
+
 }
 
 button:hover {
@@ -177,6 +194,7 @@ button:hover {
 
 button:active {
     background: black;
+    opacity: 0.8;
 } 
 
 
